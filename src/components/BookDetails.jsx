@@ -14,7 +14,6 @@ const BookDetails = ({ bookData }) => {
   const [exchangeType, setExchangeType] = useState('byBooks'); // Default to 'byBooks'
   
   useEffect(() => {
-    // Set the exchange type based on API data if available
     if (bookData?.exchangeCondition?.type) {
       setExchangeType(bookData.exchangeCondition.type);
     }
